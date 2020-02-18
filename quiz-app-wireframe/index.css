@@ -1,0 +1,150 @@
+/*Background Image*/
+html {
+    background-image: url("rift.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*Question and Score*/
+header {
+    height: 80px;
+}
+
+ul {
+    list-style-type: none;
+    position: relative;
+    padding: 15px;
+}
+
+#question {
+    float: left;
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    font-weight: 800;
+}
+
+#score {
+    float: right;
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    font-weight: 800;
+
+}
+
+/*Starting Page and Button*/
+.start-page {
+    border: 2px solid goldenrod;
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    background-color: darkcyan;
+    font-family: 'Cinzel', serif;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.start-button, .submit-answer, .next-button, .restart-quiz {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    margin: 25px;
+}
+
+.start-button:hover, .submit-answer:hover, .next-button:hover, .restart-quiz:hover {
+    background-color: lightskyblue;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+}
+
+.questions-page {
+    box-sizing: border-box;
+    border: 2px solid goldenrod;
+    width: 100%;
+    display: none;
+    padding: 10px;
+    font-size: 16px;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: darkcyan;
+    font-family: 'Cinzel', serif;
+}
+
+/*
+const QUESTIONS = [
+    {
+        question: "Who is the best Wukong player in NA?",
+        choices: [
+            'I am Weasel',
+            'King Wukong',
+            'Harambe',
+            'whats a wukong'
+        ],
+        correctAnswer: 0,
+        explanation: 'I am Weasel achieved Masters rank last season playing only Wukong jungle. However, he got demoted to D1 before the season ended.'
+    },
+    {
+        question: "Who is the number one Pantheon player in THE WORLD?",
+        choices: [
+            'Aeigiz',
+            'KGB DADDY 2',
+            'Keegun',
+            'fox solo'
+        ],
+        correctAnswer: 2,
+        explanation: 'Keegun has achieved Challenger rank on all of his accounts playing mostly Pantheon.'
+    },
+    {
+        question: "When you win a game, what do you say in /all chat?",
+        choices: [
+            'gg',
+            'good game',
+            'ggez',
+            'yawn ggez'
+        ],
+        correctAnswer: 3,
+        explanation: '"yawn ggez" is what toxic high elo players say to one another.'
+    },
+    {
+        question: "When your team is losing and the score is 0 to 8 at the 7 minute mark, what do you say to your team?",
+        choices: [
+            'Winnable',
+            'Open mid',
+            'You all suck',
+            'gg, ff @15'
+        ],
+        correctAnswer: 1,
+        explanation: "High elo players know that there are bad games so moving onto the next one wastes less time."
+    },
+    {
+        question: "When the enemy team has a Morgana, Blitzcrank, or Thresh, what can you expect?",
+        choices: [
+            'An early game invade',
+            'Easy laning phase',
+            'A bunch of miss skill shots',
+            'ggez'
+        ],
+        correctAnswer: 0,
+        explanation: 'Players that play those champions like to do early invades to try to get a kill or two before laning phase.'
+    }
+]
+*/
